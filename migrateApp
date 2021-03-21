@@ -1,0 +1,32 @@
+Can the application be moved to AWS and hosted on an EC2 instance with no changes?
+
+Applications that fit into this category could be migrated to AWS as an EC2 instance image. Server migration tools, and database migration tools discussed in Chapter 2, can carry out these migration paths quite effectively. However, applications that are lifted and shifted to the cloud will have other dependencies and issues that will have to be considered:
+
+The application stores its data in a database. Will the database remain on-premise or be moved to the cloud?
+
+If the database for the application remains on-premise, are there latency issues that need to be considered when communicating with the database?
+
+Will a high-speed connection need to be established between the AWS cloud and the database remaining on-premise?
+
+Are there compliance issues regarding the application data? Does the data have to be encrypted at rest? Does communication with the database need to be encrypted?
+
+Do users authenticate to the application across the corporate network? If so, are federation services required to be deployed at AWS for single sign-on (SSO)?
+
+Are local dependencies installed on the application server that will interfere with the application server’s operation in the AWS cloud?
+
+Are there licensing considerations for both the operating system and the application when operating in the cloud?
+
+Is there an existing SaaS application hosted by a public cloud provider that should replace the application because it’s a better choice?
+
+This can be a very political issue to resolve. With so many hosted cloud applications available in the public cloud, the odds are close to 100% that there will be an existing application that could replace the current on-premise application.
+
+Should the application remain on-premise and eventually be deprecated?
+
+The application is hosted on legacy hardware that is near end-of-life.
+
+The application is not virtualized.
+
+The application does not have support.
+
+The application is used by a small number of users.
+
